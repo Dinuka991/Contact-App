@@ -1,0 +1,27 @@
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
+    <title>Contact App</title>
+    <h1>Contact App</h1>
+</head>
+ <body class="container" ng-app="myApp" >
+
+ <div  ng-controller="myCtrl as Ctrl">
+  <div class="row">
+     <ul class="list-group">
+           <li class="list-group-item" ng-repeat="x in details">
+              <a href=""  ng-click="changeLanguage(x.id)"  >
+                    <span>{{x.name.first +' ' + x.name.last}}</span>
+                </a>
+            </li>
+    </ul>
+ </div>
+ </div>
+
+
+ </body>
+</html>
